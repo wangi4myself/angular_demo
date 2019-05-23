@@ -1,0 +1,14 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav>Sidenav content</mat-sidenav>
+    <div class="site">
+        <header>
+            <app-header (toggle)="sidenav.toggle()"></app-header>
+        </header>
+        <main>
+        </main>
+        <footer>
+            <app-footer></app-footer>
+        </footer>
+    </div>
+</mat-sidenav-container>
+
