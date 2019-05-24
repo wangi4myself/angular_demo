@@ -9,6 +9,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   @Output() toggle=new EventEmitter<void>();
+  @Output() toggleDartTheme=new EventEmitter<boolean>();
   constructor() {
     
   }
@@ -17,8 +18,12 @@ export class HeaderComponent implements OnInit {
     
   }
 
-  openSlideBar(){
+  openSlideBar():void{
     this.toggle.emit();
+  }
+
+  onChange(checked:boolean):void{
+    this.toggleDartTheme.emit(checked)
   }
 
 }
