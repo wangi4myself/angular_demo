@@ -11,7 +11,10 @@ import {
   MatCardModule,
   MatInputModule,
   MatListModule,
-  MatSlideToggleModule
+  MatSlideToggleModule,
+  MatGridListModule,
+  MatDialogModule,
+  MatAutocompleteModule
 } from '@angular/material';
 
 
@@ -25,7 +28,10 @@ import {
     MatCardModule,
     MatInputModule,
     MatListModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatGridListModule,
+    MatDialogModule,
+    MatAutocompleteModule
   ],
   exports: [
     CommonModule,
@@ -35,7 +41,10 @@ import {
     MatCardModule,
     MatInputModule,
     MatListModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatGridListModule,
+    MatDialogModule,
+    MatAutocompleteModule
   ]
 })
 export class SharedModule {}

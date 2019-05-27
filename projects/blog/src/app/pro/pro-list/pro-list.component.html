@@ -1,0 +1,10 @@
+<app-pro-item *ngFor="let project of projects"
+[item]="project"
+class="card"
+(onInvite)="lanchInviteDialog()"
+>
+
+</app-pro-item>
+<button class="fab_button" mat-fab type="button" (click)="openNewDialog()">
+  <mat-icon>add</mat-icon>
+</button>
