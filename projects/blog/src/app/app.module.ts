@@ -1,24 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CoreModule} from './core/core.module'
 import { AppComponent } from './app.component';
-import { LayoutModule } from '@angular/cdk/layout';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { MatSidenavModule } from '@angular/material';
+import { MatSidenavModule,MatListModule } from '@angular/material';
+import { AppRoutingModule } from './app-routing.module'
+import { LoginModule } from './login/login.module'
+import { ProModule } from './pro/pro.module'
 
 @NgModule({
   declarations: [
     AppComponent,
   ],
   imports: [
-    BrowserAnimationsModule,
     CoreModule,
     BrowserModule,
-    LayoutModule,
     MatSidenavModule,
-    FormsModule, 
-    ReactiveFormsModule,
+    MatListModule,
+    AppRoutingModule,
+    LoginModule,
+    ProModule
   ],
   providers: [],
   bootstrap: [AppComponent]

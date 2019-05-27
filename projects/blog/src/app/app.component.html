@@ -1,10 +1,13 @@
-<mat-sidenav-container>
-    <mat-sidenav #sidenav>Sidenav content</mat-sidenav>
+<mat-sidenav-container [class.unicorn-dark-theme]="darkTheme">
+    <mat-sidenav #sidenav>
+        <app-sliderbar></app-sliderbar>
+    </mat-sidenav>
     <div class="site">
         <header>
-            <app-header (toggle)="sidenav.toggle()"></app-header>
+            <app-header (toggle)="sidenav.toggle()" (toggleDartTheme)="swicthTheme($event)"></app-header>
         </header>
         <main>
+            <router-outlet></router-outlet>
         </main>
         <footer>
             <app-footer></app-footer>

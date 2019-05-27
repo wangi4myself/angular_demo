@@ -1,22 +1,21 @@
 import { NgModule,SkipSelf,Optional } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SliderbarComponent } from './sliderbar/sliderbar.component';
-import { MatToolbarModule,MatIconModule,MatButtonModule } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 import { MatIconRegistry } from '@angular/material'
 import { DomSanitizer } from '@angular/platform-browser'
 import{ loadSvgResources} from '../utils/svg.utils'
+import {SharedModule} from '../shared/shared.module'
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [HeaderComponent, FooterComponent, SliderbarComponent],
   imports: [
-    CommonModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule,
+    BrowserAnimationsModule
   ],
   exports:[
     HeaderComponent, FooterComponent, SliderbarComponent
