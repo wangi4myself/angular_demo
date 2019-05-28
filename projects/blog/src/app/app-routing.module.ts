@@ -4,7 +4,8 @@ import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
     { path: '', redirectTo:'/login',pathMatch:'full' },
-    { path: 'project', redirectTo:'/project' }
+    { path: 'project', redirectTo:'/project' },
+    { path: 'tasklist', redirectTo:'/tasklists' }
 ];
 
 @NgModule({

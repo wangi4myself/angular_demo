@@ -6,6 +6,7 @@ import { MatSidenavModule,MatListModule } from '@angular/material';
 import { AppRoutingModule } from './app-routing.module'
 import { LoginModule } from './login/login.module'
 import { ProModule } from './pro/pro.module'
+import { TaskModule } from './task/task.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProModule } from './pro/pro.module'
     MatListModule,
     AppRoutingModule,
     LoginModule,
-    ProModule
+    ProModule,
+    TaskModule
   ],
   providers: [],
   bootstrap: [AppComponent]
