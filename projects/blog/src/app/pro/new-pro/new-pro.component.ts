@@ -7,7 +7,7 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
   styleUrls: ['./new-pro.component.scss']
 })
 export class NewProComponent implements OnInit {
-
+  title:string;
   constructor(
     @Inject(MAT_DIALOG_DATA) private data, 
     private dialogRef:MatDialogRef<NewProComponent>, 
@@ -16,7 +16,8 @@ export class NewProComponent implements OnInit {
    }
 
   ngOnInit() {
-    console.log(this.data);
+    // console.log(this.data);
+    this.title=this.data.title
   }
 
   onClick(){
