@@ -1,6 +1,6 @@
 <mat-sidenav-container [class.unicorn-dark-theme]="darkTheme">
     <mat-sidenav #sidenav>
-        <app-sliderbar></app-sliderbar>
+        <app-sliderbar (navClick)="sidenav.toggle()"></app-sliderbar>
     </mat-sidenav>
     <div class="site">
         <header>

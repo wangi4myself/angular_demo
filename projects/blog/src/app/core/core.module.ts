@@ -5,9 +5,11 @@ import { SliderbarComponent } from './sliderbar/sliderbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatIconRegistry } from '@angular/material'
 import { DomSanitizer } from '@angular/platform-browser'
-import{ loadSvgResources} from '../utils/svg.utils'
-import {SharedModule} from '../shared/shared.module'
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { loadSvgResources} from '../utils/svg.utils'
+import { SharedModule } from '../shared/shared.module'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from '../app-routing.module'
+
 
 
 @NgModule({
@@ -15,10 +17,11 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
   imports: [
     HttpClientModule,
     SharedModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   exports:[
-    HeaderComponent, FooterComponent, SliderbarComponent
+    HeaderComponent, FooterComponent, SliderbarComponent, AppRoutingModule
   ]
 })
 export class CoreModule { 

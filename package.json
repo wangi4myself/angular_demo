@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "startBlog": "ng serve blog"
+    "startBlog": "ng serve blog",
+    "testBlog": "ng test blog"
   },
   "private": true,
   "dependencies": {
